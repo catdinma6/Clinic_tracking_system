@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Electronic Medical Record</title>
+        <link href="assets/style1.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
+    </head> 
+    <body>
+       
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+            <header>
+                <div class="header">
+                    <img src="assets/image1.jpg">
+                   
+                    <div class="dropdown">
+                        <button class="dropbtn">Admin</button>
+                        <div class="dropdown-content">
+                        <a href = "../index.html">Logout</a>
+                        <a href = "cpassword.html">Change Password</a>
+                        
+                      </div>
+                      </div>
+                   </div> 
+                
+            </header>
+        <div class="wrapper">
+            <div class="sidebar">
+              
+                <ul>
+                    <li><a href="admin.html"><i class="fas fa-home"></i>Dashboard</a></li>
+ 
+                   <li><a href="doctor_page.html"><i class="fas fa-user-md"></i>Doctors</li>
+                  
+                    
+                    <li><a href="support-staff.html"><i class="fas fa-user-nurse"></i>Support Staffs</a></li>
+                    
+                    <li><a href="#"><i class="fas fa-users"></i>Patients</a></li>
+                    <li><a href="all_patient.html"><i class="fas fa-users"></i>All Patients</a></li>
+                    <li><a href="add_patient.html"><i class="fas fa-user-plus"></i>Add New Patient</a></li>
+                    
+                    <li><a href="doctor-logs.html"><i class="fas fa-list-ul"></i>Doctor Session Logs</a></li>
+                    
+                    <li><a href="admin.html"><i class="fas fa-list-ul"></i>User Session Logs</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-check"></i>Appointments</a></li>
+                    <li><a href="today_appointments.html"><i class="fas calendar-check"></i>Today</a></li>
+                    <li><a href="all_appointment.html"><i class="fas calendar-check"></i>All Appointments</a></li>
+                    <li><a href="new_appointments.html"><i class="fas calendar-check"></i>Book New</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i>Admission</a></li>
+                    <li><a href="view_admitted.html"><i class="fas fa-hotel"></i>View Admitted</a></li>
+                    <li><a href="add_admission.html"><i class="fas fa-hotel"></i>Add New Admission</a></li>
+                    <li><a href="#"><i class="fas fa-bed"></i>Room Management</a></li>
+                    <li><a href="view_rooms.html"><i class="fas fa-user-bed"></i>View Rooms</a></li>
+                    <li><a href="add_room.html"><i class="fas fa-bed"></i>Add Room</a></li>
+                    
+                    <li><a href="report.html"><i class="fas fa-copy"></i>Reports</a></li>
+                   
+                    <li><a href="patient_search.html"><i class="fas fa-search"></i>Patient Search</a></li>
+
+                    <br>
+                    <li><a href="../index.html"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
+                  
+                </ul>      
+            </div>
+          
+        </div>
+        <div class = "body">
+            <div class="admin-head">
+        <p>ADMIN | DOCTOR </p>   
+       </div>
+           <br>
+            <br>
+            <div class="form-class" style ="padding: 32px;">
+            <p>Add Doctor</p>
+            <br>
+            <div class="doc_spec">
+                <label for="doctor_specialization" >Doctor Specialization</label>
+                <select id="specialization" name="spec">
+                    <option value="optamologist">Optamologist</option>
+                    <option value="dentist">Dentist</option>
+                    <option value="dermatologist">Dermatologist</option>
+                    <option value="physician">General Physician</option>
+                    <option value="gynecologist">Gynecologist</option>
+                 
+                
+                </select>
+                <br>
+                <label for="doc_id"> Doctor Id</label>
+    <input type="text" id="doc_id" name="d_id" placeholder="Enter Doctor Id">
+                <label for="doc_name">Doctor Name</label>
+                <input type="text" id="doc_name" name="d_name" placeholder="Enter Doctor Name">
+            <br>
+            <label for="d_email">Doctor Email</label>
+            <input type="text" id="doc_email" name="d_email" placeholder="Enter Doctor Email ">
+            <br>
+            <label for="d_phone">Doctor Contact number</label>
+            <input type="text" id="doc_phone" name="d_phone" placeholder="Enter Doctor Contact Number">
+            
+            <br>
+            <label for="doc_address"> Doctor Home Address</label>
+        <input type="text" id="doc_address" name="d_address" placeholder="Enter Doctor Home Address">
+                <br>
+                <label for="doc_password">Password</label>
+                <input type="password" id="doc_password" name="d_password" placeholder="Enter Password"><br>
+                <label for="doc_cpassword">Confirm Password</label>
+                <input type="password" id="doc_cpassword" name="d_cpassword" placeholder="Confirm Password">
+                <br>
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+            <hr style="color: lightgray;">
+            </div>
+            </div>
+            </body>
+            </html>
