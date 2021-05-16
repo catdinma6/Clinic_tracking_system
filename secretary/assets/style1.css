@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+header{
+  padding: 8px;
+  color: blue;
+  background-color: white;
+  clear: left;
+  text-align: center;
+  position: fixed;
+}
+img{
+  margin: 0;
+  margin-right: 1200px;
+}
+
+.accordion:after {
+  content: '\002B';/* Unicode character for "plus" sign (+) */
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";/* Unicode character for "minus" sign (-) */
+}
+.panel{
+  padding: 0 18px;
+  background-color:#1E464A;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+.wrapper .sidebar{
+  width: 300px;
+  height: 100%;
+  background: #1E464A;
+  padding: 30px 45px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+
+}
+
+/* .wrapper .sidebar img{
+
+} */
+
+.wrapper .sidebar ul li{
+  padding: 8px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+
+}    
+
+.wrapper .sidebar ul li a{
+  color: #ffffff;
+
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #0D9DAD;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .menu-bar{
+width: 100%;
+height: 70px;
+background-color: #ACBCBE;
+}
+
+.body{
+ 
+  margin-left: 300px;
+  padding: 20px 20px;;
+}
+.body p{
+  font-size: 30px;
+}
+.body .admin-head{
+  margin-left: 35px;
+  margin-top: 100px;
+  width: 85%;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 48px;
+
+}
+
+.form-class{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+input[type=text], select , textarea{
+  width: 500px;
+  padding: 12px 18px;
+  margin: 8px 0;
+  display:block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password]{
+  width: 500px;
+  padding: 12px 18px;
+  margin: 8px 0;
+  display:block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date]{
+  width: 500px;
+  padding: 12px 18px;
+  margin: 8px 0;
+  display:block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 200px;
+  background: #0D9DAD;
+  color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #0D9DAD;
+  font-family: 'RocknRoll One', sans-serif;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#1E464A;;
+}
+.container .column {
+  float: left;
+  /* width: 25%; */
+  padding: 0 10px;
+
+}
+
+/* Remove extra left and right margins, due to padding */
+.container .row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .container .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.container .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 48px;
+  text-align: center;
+  background-color: white;
+  margin-top: 60px;
+  width: 350px;
+  height: 200px;
+  margin-left: 25px;
+}
+.container .card p{
+  font-family: Arial;
+  font-size: 12px;
+}
+.container .card h2{
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+}
+  /* Responsive columns - one column layout (vertical) on small screens */
+  
+  .fa-angle-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  .wrapper .sidebar .dropdown-btn {
+   
+    font-size: 17px;
+    color: white;
+    display: block;
+    background: none;
+    width: 100%;
+    text-align: left;
+  
+  }
+  
+  .wrapper .sidebar .dropdown-container {
+    display: none;
+    background-color:white;
+    padding-left: 8px;
+  }
+  table{
+    width: 100%;
+    border-spacing: 5px;
+  }
+  table, th,td{
+    border-bottom: 1px solid lightgray;
+    border-collapse: collapse;
+    border-top: none;
+    text-align: center;
+ 
+    
+  }
+  th, td {
+    padding: 15px;
+  
+  }
+  .doc_spec{
+    border: 1px solid lightgray;
+    padding: 10px;
+   width: 550px;
+   margin-left: 35px;
+  }
+  .dropbtn {
+    background: #0D9DAD;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #0D9DAD;
+    font-family: 'RocknRoll One', sans-serif;
+    font-style: normal;
+    
+    padding: 8px;
+    width:160px;
+    font-size: 16px;
+    cursor: pointer;
+  
+}
+/* .dropbtn1 {
+ 
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: 'RocknRoll One', sans-serif;
+  font-style: normal;
+  padding: 16px;
+  width:160px;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   margin-left:1200px;
+   top: 0;
+
+}
+.dropdown1{
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content1 a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown-content1 a:hover {background-color: #0D9DAD;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #1E464A;
+}
